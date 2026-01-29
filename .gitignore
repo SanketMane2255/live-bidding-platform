@@ -1,0 +1,4 @@
+# Ignore backend dependencies
+backend/node_modules/
+# Ignore frontend dependencies
+frontend/node_modules/  
