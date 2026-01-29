@@ -3,4 +3,4 @@ backend/node_modules/
 # Ignore frontend dependencies
 frontend/node_modules/  
 
-backend/.env
+backend/.env/
