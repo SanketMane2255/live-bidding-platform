@@ -4,7 +4,7 @@ export function initializeSocketHandlers(io) {
   const connectedUsers = new Map();
 
   io.on('connection', (socket) => {
-    console.log(`✅ Client connected: ${socket.id}`);
+    console.log(` Client connected: ${socket.id}`);
 
     connectedUsers.set(socket.id, {
       userId: socket.handshake.query.userId || socket.id,
@@ -82,7 +82,7 @@ export function initializeSocketHandlers(io) {
     });
 
     socket.on('disconnect', () => {
-      console.log(`❌ Client disconnected: ${socket.id}`);
+      console.log(` Client disconnected: ${socket.id}`);
       connectedUsers.delete(socket.id);
     });
   });
